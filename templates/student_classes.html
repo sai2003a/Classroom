@@ -1,0 +1,46 @@
+{%extends "base.html"%}
+
+{% block title%} student_classes {%endblock%}
+
+{%block content%}
+
+<section class="classes">
+    <h1>{{session['username']}}'s Classes</h1>
+<div class="classes_1">
+    <h2>Enrolled classes</h3>
+    <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#">Class 1 : Python</a></li>
+          <li class="list-group-item"><a href="#">Class 2 : JavaScript</a></li>
+          <li class="list-group-item"><a href="#">Class 3 : Dsa</a></li>
+        </ul>
+      </div>
+</div>
+
+<div class="classes_2">
+<h2>Class Details</h2>
+<div class="card">
+    <a href="#">
+    <div class="card-body">
+      <h4>Class Title</h4>
+      <p>Instructor: Dr. John Doe</p>
+      <p>Schedule: Monday, Wednesday, Friday - 10:00 AM to 11:00 AM</p>
+    </div>
+  </a>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h4>Material Resources</h4>
+      <ul>
+        <li><a href="#">Lecture Notes</a></li>
+        <li><a href="#">Slides</a></li>
+      </ul>
+    </div>
+  </a>
+  </div>
+</div>
+</section>
+
+
+{% endblock%}

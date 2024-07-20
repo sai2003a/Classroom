@@ -127,12 +127,12 @@ font-size: 2.5vw;
     margin-top: 5vw;
  }
 
-.card a{
+ .Recent_activity .card a{
     text-decoration: none;
     color: #000;
     
 }
-.card a:hover{
+.Recent_activity .card a:hover{
     color: #000;
     background-color: #eef4f8;
 }
@@ -144,6 +144,59 @@ font-size: 2.5vw;
 .card-body{
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 300;
+    font-style: normal;
+}
+
+/* ////////////////////////////////// Student_classes.html /////////////////////////////////*/
+
+.classes h1{
+    text-align: center;
+    padding-top: 3.5vw;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.classes_1 h2{
+    text-align: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.classes_1{
+    /* border: 2px solid black; */
+    padding-top: 3.5vw;
+    width: 35vw;
+    position: relative;
+    left: 33%;
+}
+
+.classes_1 .card a{
+text-decoration: none;
+color: #000;
+font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.classes_1 .card li:hover{
+    background-color:#eef4f8;
+}
+.classes_2{
+    margin-right: 15vw;
+    margin-left: 15vw;
+    margin-top: 5vw;
+   
+}
+.classes_2 .card a{
+    color: #000;
+    text-decoration: none;
+}
+.classes_2 .card .card-body a{
+    background-color: yellow;
+}
+.classes_2 h2{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 5  00;
     font-style: normal;
 }
 

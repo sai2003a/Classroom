@@ -93,6 +93,10 @@ def student_dashboard():
         return render_template('student_dashboard.html')
     else:
         return redirect(url_for('login_student'))
+    
+@app.route('/student_classes')
+def student_classes():
+    return render_template('student_classes.html')
 
 @app.route('/teacher_dashboard')
 def teacher_dashboard():
