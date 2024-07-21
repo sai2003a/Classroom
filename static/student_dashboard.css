@@ -27,8 +27,9 @@ font-size: 2.5vw;
 .navbar-collapse{
     text-align: center;
     /* border: 2px solid black; */
-    margin-left: 24vw;
-    margin-right: 18vw;
+    margin-left: 30vw;
+
+    /* margin-right: 18vw; */
     
     
 }
