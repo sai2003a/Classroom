@@ -108,6 +108,10 @@ def student_assignment():
 def student_announcement():
     return render_template('student_announcement.html')
 
+@app.route('/student_attendance')
+def student_attendance():
+    return render_template('student_attendance.html')
+
 @app.route('/teacher_dashboard')
 def teacher_dashboard():
     if 'username' in session and session['role'] == 'teacher':

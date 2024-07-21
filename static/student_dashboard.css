@@ -374,6 +374,29 @@ font-family: "Fira Sans Condensed", sans-serif;
     border: 1px solid rgb(3, 3, 3);
 }
 
+/* /////////////////////////////////// attendance page /////////////////////////////// */
+
+
+.attendance{
+    margin-top: 5vw; ;
+}
+.attendance h1{
+    text-align: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.attendance_1{
+    margin-top: 5vw;
+}
+.attendance_2{
+    text-align: center;
+    margin-top: 5vw;
+}
+.attendance_2_1{
+    margin-top: 5vw;
+    border: 1px solid black;
+}
 
 /* ////////////////////////////////   footer  //////////////////////////////////// */
 
