@@ -20,7 +20,7 @@ def home():
 
 @app.route("/logout")
 def logout():
-    session.pop("username") 
+    session.pop("username") and session.pop("role")
     return redirect("/select_role")
 
 @app.route('/select_role')
@@ -103,6 +103,10 @@ def student_classes():
 @app.route('/student_assignment')
 def student_assignment():
     return render_template('student_assignment.html')
+
+@app.route('/student_announcement')
+def student_announcement():
+    return render_template('student_announcement.html')
 
 @app.route('/teacher_dashboard')
 def teacher_dashboard():

@@ -270,6 +270,111 @@ font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 400;
 }
 
+/* //////////////////////////////////// Student announcement ////////////////////////// */
+
+
+.announcement{
+    margin-top:5vw ;
+}
+.announcement h2{
+    text-align: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.announce_1 span{
+    color: red;
+
+}
+/* .container{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10vw;
+    
+} */
+ .announce_1{
+    margin-left:15vw ;
+    margin-right: 15vw;
+    margin-top: 5vw;
+ }
+.announce_1_1{
+    background-color: rgb(249, 211, 211);
+    border: 1px solid black;
+    
+    text-align: center;
+    
+}
+.announce_1_1 .btn{
+    color: red;
+    background-color: rgb(245, 185, 185) ;
+    border: 1px solid red;
+}
+.announce_1_1 .btn:hover{
+    color: red;
+    background-color: rgb(249, 203, 203) ;
+    border: 1px solid red;
+}
+
+.announce_1 span{
+    color: red;
+
+}
+/* .container{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10vw;
+    
+} */
+ .announce_2{
+    margin-left:15vw ;
+    margin-right: 15vw;
+    margin-top: 5vw;
+ }
+.announce_2_1{
+    border: 1px solid black;
+    
+    text-align: center;
+    
+}
+.announce_2_1 .btn{
+    border: 1px solid black;
+    color: #000;
+}
+.announce_2_1 .btn:hover{
+    
+    background-color: #dbedf9 ;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+
+/* .container{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10vw;
+    
+} */
+.announce_3{
+    margin-left:15vw ;
+    margin-right: 15vw;
+    margin-top: 5vw;
+ }
+.announce_3_1{
+    border: 1px solid black;
+    
+    text-align: center;
+    
+}
+.announce_3_1 .btn{
+    border: 1px solid black;
+    color: #000;
+}
+.announce_3_1 .btn:hover{
+    
+    background-color: #dbedf9 ;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+
 /* ////////////////////////////////   footer  //////////////////////////////////// */
 
 
