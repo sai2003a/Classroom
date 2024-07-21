@@ -11,8 +11,10 @@ app.permanent_session_lifetime = timedelta(days=365)
 
 @app.route("/")
 def home():
-    if "username" in session:
-        return render_template('index.html')
+    if 'username' in session and session['role'] == 'student':
+        return render_template('student_dashboard.html')
+    elif  'username' in session and session['role'] == 'teacher':
+        return render_template('teacher_dashboard.html')
     else:
         return redirect("/select_role")
 
@@ -97,6 +99,10 @@ def student_dashboard():
 @app.route('/student_classes')
 def student_classes():
     return render_template('student_classes.html')
+
+@app.route('/student_assignment')
+def student_assignment():
+    return render_template('student_assignment.html')
 
 @app.route('/teacher_dashboard')
 def teacher_dashboard():

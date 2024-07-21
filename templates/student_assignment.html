@@ -1,0 +1,50 @@
+{%extends "base.html"%}
+
+{% block title%} student_classes {%endblock%}
+
+{%block content%}
+
+<section class="assignment">
+    <h1>{{session['username']}}'s Work To Do</h1>
+    <div class="container">
+        <div class="ass_1" >
+        <div class="card ass_card_1">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">Assignment 1: Python Basics</a> - Due: 2024-07-20</li>
+                <li class="list-group-item"><a href="#">Assignment 2: Javascript Basics</a> - Due: 2024-07-27</li>
+                <li class="list-group-item"><a href="#">Assignment 3: Data Structures</a> - Due: 2024-08-05</li>
+            </ul>
+          </div>
+          
+
+          <div class="card ass_card_2">
+            <h5 class="card-header">Assignment Details</h5>
+            <div class="card-body">
+              <h5 class="card-title">Assignment Title</h5>
+              <p class="card-text">Description: Complete the Python basics exercises.</p>
+              <p class="card-text">Due Date: 2024-07-20</p>
+              <a href="#" class="btn ">Download Assignment</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="container ass_2">
+        <div class="row grid column-gap-4">
+            <div class="card col ass_3">
+                <div class="card-body">
+                   <p> <a href="#">Assignment 1: Python Basics</a> - Submitted </p>
+                </div>
+              </div>
+
+              <div class="card col sai">
+                <div class="card-body">
+                  <p> <a href="#" class="ass_5">Assignment 3: Data Structures</a> - Past Due</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+{% endblock%}

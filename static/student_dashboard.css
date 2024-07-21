@@ -196,11 +196,81 @@ font-family: "Fira Sans Condensed", sans-serif;
 }
 .classes_2 h2{
     font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 5  00;
+    font-weight: 500;
+    font-style: normal;
+}
+/* ///////////////////////////////////// assignment section //////////////////////////// */
+ 
+.assignment{
+    margin-top: 5vw;
+}
+
+.assignment h1{
+    text-align: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
- /* ////////////////////////////////   footer  //////////////////////////////////// */
+
+.assignment .container{
+    /* border: 2px solid black; */
+    margin-top: 5vw;
+
+}
+
+.ass_1{
+    display: flex;
+    gap: 5vw;
+}
+.ass_1 .ass_card_1{
+    height:fit-content;
+    
+}
+.ass_1 .ass_card_1 li a{
+    text-decoration: none;
+    color: #000;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.ass_1 .ass_card_1 li:hover{
+    background-color: #eef4f8;
+}
+.ass_1 .ass_card_1 li a:hover{
+    text-decoration: underline;
+}
+
+.ass_1 .ass_card_2 .btn{
+    background-color: #c3e2f9;
+    border: 1px solid black;
+}
+.ass_1 .ass_card_2 .btn:hover{
+    background-color: #deeef8;
+}
+
+.ass_2 .ass_3 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+.ass_5:hover{
+    text-decoration:underline;
+    
+}
+.sai:hover{
+    background-color: #eef4f8;
+
+}
+
+.ass_5{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+/* ////////////////////////////////   footer  //////////////////////////////////// */
 
 
 footer{
