@@ -39,7 +39,8 @@ h1 {
 }
 
 .btn.student {
-    background-color: #007bff;
+    background-color: #dbedf9;
+    color: black;
 }
 
 .btn.teacher {

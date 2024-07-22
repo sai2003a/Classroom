@@ -41,15 +41,15 @@ input[type="password"] {
 button {
     padding: 10px;
     font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
+    color:black;
+    background-color: #dbedf9 ;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color:  #d2ecfd ;
 }
 
 p {
@@ -63,4 +63,5 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+    color:  #8ecffa ;
 }
