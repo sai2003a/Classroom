@@ -40,5 +40,107 @@
 {% block title%} student Dashboard {%endblock%}
 
 {%block content%}
-<h1>hello</h1>
+
+<section class="teacher">
+  <h1>Welcome ,{{session['username']}}</h1>
+  <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>
+  <p>Logout</p>
+  </a>
+</section>
+
+<section class="teacher_dash">
+  <div class="container">
+    <div class="row grid column-gap-5 teacher_dash_1">
+
+      <div class="card col-5">
+        <div class="card-body">
+          <h2>Total Classes</h2>
+          <p>5</p>
+        </div>
+      </div>
+
+      <div class="card col-5">
+        <div class="card-body">
+          <h2>Total Students</h2>
+          <p>60</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="teacher_assignment">
+  <div class="container">
+  <div class="card teacher_dash_1" >
+    <div class="card-header">
+      <h2>Assignments</h2>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h3>Assignment Title 1</h3>
+                                <p>Class: Python 101</p>
+                                <p>Due Date: 2024-07-25</p>
+          </div>
+          <div class="teach_btn_1">
+            <button type="button" class="btn">View Details</button>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h3>Assignment Title 2</h3>
+                                <p>Class: Javascript 202</p>
+                                <p>Due Date: 2024-07-30</p>
+          </div>
+          <div class="teach_btn_1">
+            <button type="button" class="btn">View Details</button>
+          </div>
+        </div>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section class="teacher_assignment">
+  <div class="container">
+  <div class="card teacher_dash_1" >
+    <div class="card-header">
+      <h2>All Announcements</h2>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5>Announcement Title 1</h5>
+                        <p>Content of the announcement goes here...</p>
+                        <p>Posted on: 2024-07-12</p>
+          </div>
+          <div class="teach_btn_2">
+            <button class="btn btn-secondary btn-sm">Edit</button>
+            <button class="btn btn-danger btn-sm">Delete</button>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5>Announcement Title 2</h5>
+            <p>Content of the announcement goes here...</p>
+            <p>Posted on: 2024-07-11</p>
+          </div>
+          <div class="teach_btn_2">
+            <button class="btn btn-secondary btn-sm">Edit</button>
+            <button class="btn btn-danger btn-sm">Delete</button>
+          </div>
+        </div>
+    </ul>
+  </div>
+</div>
+</section>
+
+
 {% endblock%}

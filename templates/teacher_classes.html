@@ -1,0 +1,63 @@
+{%extends "base_teacher.html"%}
+
+{% block title%} student Dashboard {%endblock%}
+
+{%block content%}
+
+<section class="teach_classes">
+    <div class="container">
+    <div class="teach_classes_1">
+        <h2>Class You Teach</h2>
+        <div class="card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#">Class 1 : Python</a></li>
+              <li class="list-group-item"><a href="#">Class 2 : JavaScript</a></li>
+              <li class="list-group-item"><a href="#">Class 3 : Dsa</a></li>
+            </ul>
+          </div>
+    </div>
+</div>
+
+    <div class="container teach_classes_2 ">
+    <div class="card" >
+        <div class="card-header">
+          <h3> class Details</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            
+                <h4>Class Title</h4>
+                <p>Schedule: Monday, Wednesday, Friday - 10:00 AM to 11:00 AM</p>
+                <p>Students Enrolled: 30</p>
+            
+                    <button class="btn  btn-success btn-sm">Edit Class</button>
+                    <button class="btn btn-danger btn-sm">Delete Class</button>
+            
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="card teach_classes_3">
+        <div class="card-body">
+          <h4>Material Resources</h4>
+          <ul>
+            <li><a href="#">Lecture Notes</a></li>
+            <li><a href="#">Slides</a></li>
+          </ul>
+          <div>
+            <button class="btn btn-primary btn-sm">Upload New Material</button>
+           
+        </div>
+        </div>
+      </a>
+      </div>
+    </div>
+
+  
+
+
+
+</section>
+
+{% endblock%}

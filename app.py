@@ -118,6 +118,19 @@ def teacher_dashboard():
         return render_template('teacher_dashboard.html')
     else:
         return redirect(url_for('login_teacher'))
+    
+@app.route('/teacher_classes')
+def teacher_classes():
+    return render_template('teacher_classes.html')
+
+@app.route('/teacher_assignment')
+def teacher_assignment():
+    return render_template('teacher_assignment.html')
+
+
+@app.route('/teacher_announcement')
+def teacher_announcement():
+    return render_template('teacher_announcement.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

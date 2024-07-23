@@ -13,7 +13,7 @@ body{
 text-align: center;
 height: 10vh;
 padding-top: 1vw;
-background-color:#F9D0F8;
+background-color:#E1BBFA;
 font-size: 2.5vw;
 
 }
@@ -70,12 +70,12 @@ font-size: 2.5vw;
 .fa-message{
     margin-left: 2.1vw;
 }*/
-.User{
+.teacher{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.User a{
+.teacher a{
   
     color: #000;
     text-decoration: none;
@@ -93,11 +93,11 @@ font-size: 2.5vw;
 
    
   }
-  .User a:hover{
-    color:  #a8cde6;
+  .teacher a:hover{
+    color: #E4CAF6;
   }
 
-.User h1{
+.teacher h1{
     text-align: center;
     padding-top: 3.5vw;
     font-family: "Fira Sans Condensed", sans-serif;
@@ -118,3 +118,206 @@ font-size: 2.5vw;
     text-align: center;
 }
  */
+ .teacher_dash{
+    /* border: 2px solid black; */
+    margin-right: 5vw;
+    margin-left: 12vw;
+    margin-top: 5vw;
+ }
+ .teacher_dash_1{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ .teacher_assignment{
+    /* border: 2px solid black; */
+    margin-top: 5vw;
+ }
+ .teach_btn_1{
+    background-color:#E1BBFA ;
+    width: 9.5vw;
+    height: 3.3vw;
+    text-align: center;
+    border-radius: 1vw;
+    
+    
+ }
+
+ .teach_btn_1:hover{
+background-color:  #E4CAF6;
+
+ }
+
+ .teach_btn_1 button{
+    font-size: 1.3vw;
+    font-weight: 450;
+
+ }
+
+ /* //////////////////////////////////// teacher.classes.html ////////////////////////////// */
+.teach_classes{
+    margin-top: 5vw;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.teach_classes_1 h2{
+    text-align: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.teach_classes_1    {
+    /* border: 2px solid black; */
+
+    width: 35vw;
+    position: relative;
+    left: 33%;
+}
+
+.teach_classes_1 .card a{
+text-decoration: none;
+color: #000;
+font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.teach_classes_1 .card li:hover{
+    background-color:#f0e3fa;
+}
+
+.teach_classes_2{
+    /* border: 2px solid black; */
+    margin-top: 5vw;
+    width: 20vw;
+   
+}
+
+.teach_classes_2 .card{
+  width: 50vw;
+  margin-left: 17vw;
+  
+}
+.teach_classes_3{
+    margin-top: 5vw;
+}
+.teach_classes_3 a{
+    color: #000;
+    text-decoration: none;
+}
+.teach_classes_3 a:hover{
+    color: #E4CAF6;
+}
+/* //////////////////////////////////// teacher assignment ////////////////////////// */
+
+.teach_assignment{
+    margin-top: 5vw;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.teach_assignment h1{
+    text-align: center;
+}
+.teach_ass{
+    /* border: 1px solid black; */
+    margin-top: 5vw;
+   
+}
+.teach_ass_1{
+    
+    width: 40vw;
+}
+/* .teach_ass_1 .ass_card_1 a{
+    color: #000;
+    text-decoration: none;
+}
+
+.teach_ass_1 .ass_card_1 li:hover{
+    background-color: #f0e3fa;
+} */
+
+.teach_manage{
+    margin-top: 5vw;
+}
+.teach_manage_1 a{
+    color: #000;
+    text-decoration: none;
+
+
+}
+.teach_manage_1 a:hover{
+    background-color: #f0e3fa;
+
+}
+/* /////////////////////////////////// .teacher announcement /////////////////////////// */
+
+.teach_announcement{
+    margin-top: 5vw;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.teach_announcement h1{
+    text-align: center;
+}
+
+.announce_1{
+    margin-left:15vw ;
+    margin-right: 15vw;
+    margin-top: 5vw;
+ }
+.announce_1_1{
+    background-color: rgb(249, 211, 211);
+    border: 1px solid black;
+    
+    text-align: center;
+    
+}
+.announce_1_1 .btn{
+    color: red;
+    background-color: rgb(245, 185, 185) ;
+    border: 1px solid red;
+}
+.announce_1_1 .btn:hover{
+    color: red;
+    background-color: rgb(249, 203, 203) ;
+    border: 1px solid red;
+}
+
+.announce_1 span{
+    color: red;
+
+}
+
+.announce_2{
+    margin-left:15vw ;
+    margin-right: 15vw;
+    margin-top: 5vw;
+ }
+.announce_2_1{
+    border: 1px solid black;
+    
+    text-align: center;
+    
+}
+.announce_2_1 .btn{
+    border: 1px solid black;
+    color: #000;
+}
+.announce_2_1 .btn:hover{
+    
+  
+    border: 1px solid rgb(3, 3, 3);
+}
+
+ /* ////////////////////////////////   footer  //////////////////////////////////// */
+
+
+footer{
+    margin-top: 5vw;
+}
