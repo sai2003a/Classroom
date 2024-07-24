@@ -132,5 +132,9 @@ def teacher_assignment():
 def teacher_announcement():
     return render_template('teacher_announcement.html')
 
+@app.route('/teacher_attendance')
+def teacher_attendance():
+    return render_template('teacher_attendance.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
