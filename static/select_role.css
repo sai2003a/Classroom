@@ -39,12 +39,13 @@ h1 {
 }
 
 .btn.student {
-    background-color: #dbedf9;
+    background-color: #c6e6fc;
     color: black;
 }
 
 .btn.teacher {
-    background-color: #28a745;
+   background-color: #edd0ff;
+   color: black;
 }
 
 .btn:hover {

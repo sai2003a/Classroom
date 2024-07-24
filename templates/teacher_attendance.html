@@ -4,9 +4,114 @@
 
 {%block content%}
 
-<section class="tecah_attendance">
+<section class="teach_attendance">
+<h1>{{session['username']}} Class Attendance</h1>
+<div class="container teach_attend">
+    <div class="row grid column-gap-4">
+        <div class="card col">
+            <div class="card-body">
+                <h5 class="card-title">Total Classes</h5>
+                <p class="card-text" id="total-classes">20</p>
+            </div>
+          </div>
+          <div class="card col">
+            <div class="card-body">
+                <h5 class="card-title">Overall Attendance Percentage</h5>
+                <p class="card-text" id="overall-attendance-percentage">85%</p>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="container teach_attend_1">
+<div class="card">
+    <div class="card-header">
+      <h2>Mark Attendance</h2>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+      <form>
+        <div class="mb-3">
+            <label for="attendanceDate" class="form-label">Date</label>
+            <input type="date" class="form-control" id="attendanceDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="classSelect" class="form-label">Class</label>
+            <select class="form-select" id="classSelect" required>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="dsa">Data Structures</option>
+            
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="studentSelect" class="form-label">Student</label>
+            <select class="form-select" id="studentSelect" required>
+                <option value="student1">Student 1</option>
+                <option value="student2">Student 2</option>
+                <option value="student3">Student 3</option>
 
-    
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="attendanceStatus" class="form-label">Status</label>
+            <select class="form-select" id="attendanceStatus" required>
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Attendance</button>
+    </form>
+</li>
+    </ul>
+  </div>
+</div>
+
+<div class="container teach_attend_2">
+    <div class="card">
+        <div class="card-header">
+          <h2>Individual Student Attendance</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Total Classes</th>
+                        <th>Classes Attended</th>
+                        <th>Attendance Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Student 1</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>Student 2</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>Student 3</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>85%</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+          </li>
+         
+        </ul>
+      </div>
+
+</div>
 </section>
 
 {% endblock%}
