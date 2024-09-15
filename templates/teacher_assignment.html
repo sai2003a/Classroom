@@ -1,64 +1,45 @@
-{%extends "base_teacher.html"%}
+{% extends "base_teacher.html" %}
 
-{% block title%} student Dashboard {%endblock%}
+{% block title %}Teacher Assignment Dashboard{% endblock %}
 
-{%block content%}
-
+{% block content %}
 <section class="teach_assignment">
-    <h1>{{session['username']}} Assignment</h1>
-<!-- <div class="container-sm teach_ass  d-flex align-items-center justify-content-center">
-    <div class="teach_ass_1" >
-        <div class="card ass_card_1">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="#">Assignment 1: Python Basics</a> - Due: 2024-07-20</li>
-                <li class="list-group-item"><a href="#">Assignment 2: Javascript Basics</a> - Due: 2024-07-27</li>
-                <li class="list-group-item"><a href="#">Assignment 3: Data Structures</a> - Due: 2024-08-05</li>
-            </ul>
-          </div>
-        </div> -->
-<div class="container teach_ass d-flex align-items-center justify-content-center">
-        <div class="card teach_ass_1">
-            <div class="card-header">
-              <h2>Assignment details</h2>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h5 class="card-title">Assignment Title</h5>
-                        <p class="card-text">Description: Complete the Python basics exercises.</p>
-                        <p class="card-text">Due Date: 2024-07-20</p>
-                        <button class="btn btn-primary btn-sm">Edit Assignment</button>
-                            <button class="btn btn-danger btn-sm">Delete Assignment</button>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
+    <h1>{{ session['username'] }} Assignment</h1>
 
-        <div class="container teach_manage">
-            <div class="row grid column-gap-4">
+<div class="container teach_ass d-flex align-items-center justify-content-center">
+    <div class="card teach_ass_1">
+        <div class="card-header">
+            <h2>Assignment details</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            {% for assignment in assignments %}
+                <li class="list-group-item">
+                    <h5 class="card-title">{{ assignment['title'] }}</h5>
+                    <p class="card-text">Description: {{ assignment['description'] }}</p>
+                    <p class="card-text">Due Date: {{ assignment['due_date'] }}</p>
+                    <form action="{{ url_for('edit_assignment', assignment_id=assignment['id']) }}" method="POST">
+                        <button type="submit" class="btn btn-primary btn-sm">Edit Assignment</button>
+                    </form>
+                    <form action="{{ url_for('delete_assignment', assignment_id=assignment['id']) }}" method="POST" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete Assignment</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="container teach_manage">
+    <div class="row grid column-gap-4">
+        {% for assignment in assignments %}
             <div class="card col">
                 <div class="card-body teach_manage_1">
-                    <p> <a href="#">Assignment 1: Python Basics</a> - Submitted by 25 students</p>
+                    <p><a href="#">{{ assignment['title'] }}</a> - Submitted by {{ assignment['submitted_students'] }} students</p>
                 </div>
-              </div>
-
-              <div class="card col">
-                <div class="card-body teach_manage_1">
-                    <p> <a href="#">Assignment 2: Javascript </a> - Submitted by 25 students</p>
-                </div>
-              </div>
-
-              <div class="card col teach_manage_1">
-                <div class="card-body">
-                    <p> <a href="#">Assignment 3: DSA</a> - Submitted by 25 students</p>
-                </div>
-              </div>
             </div>
-            <button class="btn btn-success mt-4">Add New Assignment</button>
-        </div>
-
-    
-       
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('add_assignment') }}" class="btn btn-success mt-4">Add New Assignment</a>
+</div>
 </section>
-
-{% endblock%}
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base_student.html" %}  <!-- For students, use a base_student template -->
+
+{% block title %}Assignments{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Assignments</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                {% if session['role'] == 'teacher' %}  <!-- Only show for teachers -->
+                <th>Actions</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for assignment in assignments %}
+            <tr>
+                <td>{{ assignment['title'] }}</td>
+                <td>{{ assignment['description'] }}</td>
+                <td>{{ assignment['due_date'] }}</td>
+                {% if session['role'] == 'teacher' %}  <!-- Only show for teachers -->
+                <td>
+                    <a href="{{ url_for('edit_assignment', id=assignment['id']) }}" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="{{ url_for('delete_assignment', id=assignment['id']) }}" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
